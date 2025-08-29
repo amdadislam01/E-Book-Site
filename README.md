@@ -20,7 +20,7 @@ A clean, minimal, and responsive **E-Book Landing Page** built with **HTML** and
 ##  Technologies Used
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,tailwindcss,js" alt="Tech Stack" width="320"/>
+  <img src="https://skillicons.dev/icons?i=html,tailwindcss,js,github,netlify" alt="Tech Stack" width="320"/>
 </p>
 
 ---
