@@ -12,7 +12,47 @@
     <!-- Css Style Link -->
      <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-book-open text-2xl text-cyan-600"></i>
+                <span class="text-2xl font-bold text-cyan-600">Open<span class="text-teal-600">Read</span></span>
+            </div>
+
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-cyan-600 font-medium hover:text-indigo-800 transition">Home</a>
+                <div class="dropdown relative">
+                    <button class="text-gray-700 hover:text-cyan-600 font-medium flex items-center transition">
+                        Categories <i
+                            class="fas fa-chevron-down ml-1 text-xs transition transform group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="dropdown-menu absolute hidden bg-white mt-2 py-2 w-48 rounded-md shadow-xl border border-gray-100 z-10">
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-cyan-50 transition">Fiction</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-cyan-50 transition">Non-Fiction</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-cyan-50 transition">Science</a>
+                        <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-cyan-50 transition">Biography</a>
+                    </div>
+                </div>
+                <a href="#" class="text-gray-700 hover:text-cyan-600 font-medium transition">Popular</a>
+                <a href="#" class="text-gray-700 hover:text-cyan-600 font-medium transition">New Releases</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <button class="p-2 text-gray-600 hover:text-cyan-600 transition">
+                    <i class="fas fa-search"></i>
+                </button>
+                <button onclick="toggleAuthModal()"
+                    class="bg-gradient-to-r from-cyan-600 to-teal-600 text-white font-bold px-4 py-2 rounded-md hover:from-cyan-600 hover:to-teal-600 transition btn-glow">
+                    Sign In
+                </button>
+                <button class="md:hidden text-gray-600">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
