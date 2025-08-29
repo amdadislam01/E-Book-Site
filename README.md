@@ -35,5 +35,11 @@ A clean, minimal, and responsive **E-Book Landing Page** built with **HTML** and
 
 ---
 
-##  Project Structure
+---
+
+##  How to Use Locally
+
+1. **Clone this repository:**
+   ```bash
+   git clone https://github.com/amdadislam01/E-Book-Site.git
 
