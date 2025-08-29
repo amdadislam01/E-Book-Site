@@ -20,20 +20,17 @@ A clean, minimal, and responsive **E-Book Landing Page** built with **HTML** and
 ##  Technologies Used
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=html,tailwindcss" alt="Tech Stack" width="160"/>
+  <img src="https://skillicons.dev/icons?i=html,tailwindcss,js" alt="Tech Stack" width="320"/>
 </p>
 
 ---
 
 ##  Screenshot
 
-> (Upload a screenshot and update the image link below)
-
 <p align="center">
-  <img src="https://ik.imagekit.io/yqnbhdlo4/Img/open-read?updatedAt=1756458430952" alt="E-Book Site Screenshot" width="800"/>
+  <img src="https://ik.imagekit.io/yqnbhdlo4/Img/open-read?updatedAt=1756458430952" alt="E-Book Site Screenshot" width="1000"/>
 </p>
 
----
 
 ---
 
