@@ -30,7 +30,7 @@ A clean, minimal, and responsive **E-Book Landing Page** built with **HTML** and
 > (Upload a screenshot and update the image link below)
 
 <p align="center">
-  <img src="https://i.postimg.cc/YOUR_IMAGE_LINK.png" alt="E-Book Site Screenshot" width="800"/>
+  <img src="https://ik.imagekit.io/yqnbhdlo4/Img/open-read?updatedAt=1756458430952" alt="E-Book Site Screenshot" width="800"/>
 </p>
 
 ---
