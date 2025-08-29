@@ -6,7 +6,7 @@
     <title>OpenRead</title>
     <!-- Tailwind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Font Awsome CDN -->
+    <!-- Favicon -->
     <link rel="shortcut icon" href="https://img.pikbest.com/png-images/20250215/educational-logo-circular-emblem-open-book-fountain-pen-nib_11514970.png!w700wp" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Css Style Link -->
@@ -256,6 +256,16 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!-- User Profile Dropdown (shown after login) -->
+    <div id="userDropdown"
+        class="hidden absolute right-4 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-50 border border-gray-200">
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">My Library</a>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Bookmarks</a>
+        <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Settings</a>
+        <div class="border-t border-gray-200"></div>
+        <a href="#" onclick="logoutUser()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Sign Out</a>
     </div>
 </body>
 </html>
