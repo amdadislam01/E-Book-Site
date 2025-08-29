@@ -181,5 +181,81 @@
             </div>
         </div>
     </div>
+
+    <!-- Book Reader Modal -->
+    <div id="readerModal"
+        class="modal fixed inset-0 bg-gray-900 bg-opacity-90 flex items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-xl shadow-2xl w-full max-w-6xl h-[90vh] flex flex-col overflow-hidden">
+            <div class="border-b border-gray-200 px-6 py-4 flex justify-between items-center bg-gray-50">
+                <div>
+                    <h3 class="text-xl font-bold text-gray-800" id="readerBookTitle">The Silent Patient</h3>
+                    <p class="text-gray-600" id="readerBookAuthor">Alex Michaelides</p>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-500 hover:text-cyan-600 p-2">
+                        <i class="fas fa-bookmark"></i>
+                    </button>
+                    <button class="text-gray-500 hover:text-cyan-600 p-2">
+                        <i class="fas fa-font"></i>
+                    </button>
+                    <button class="text-gray-500 hover:text-cyan-600 p-2">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button onclick="closeReader()" class="text-gray-500 hover:text-gray-700 p-2">
+                        <i class="fas fa-times text-xl"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex-1 overflow-auto p-8">
+                <div class="max-w-3xl mx-auto prose prose-lg" id="bookContent">
+                    <h2>Chapter 1</h2>
+                    <p>Alicia Berenson was thirty-three years old when she killed her husband. They had been married for
+                        seven years. They were both artists—Alicia was a painter, and Gabriel was a well-known fashion
+                        photographer. He had been forty years old at the time of his death.</p>
+
+                    <p>I remember the day she was arrested. It was a Friday in August, just after lunch. I was in my
+                        office when I heard the news. I can't recall who told me—probably one of the nurses. I do
+                        remember standing up and walking over to the window, looking out at the garden below, trying to
+                        make sense of what I'd heard.</p>
+
+                    <p>Alicia Berenson had shot her husband in the face five times. No one knew why. She hadn't spoken
+                        since that night. Not a single word.</p>
+
+                    <p>That was six years ago.</p>
+
+                    <p>Now, for the first time, Alicia Berenson is going to talk.</p>
+
+                    <h2>Chapter 2</h2>
+                    <p>I first heard about Alicia Berenson from a colleague at the Grove, a secure forensic unit in
+                        North London where I've worked for the past five years. I'm a forensic psychotherapist—I work
+                        with criminals who've been diagnosed with mental disorders. I assess them, treat them if
+                        possible, and then report to the courts on whether they're still a danger to society.</p>
+
+                    <p>Most of my patients are violent offenders—murderers, rapists, arsonists. Some are psychopaths.
+                        Others are simply damaged individuals who've snapped under pressure. Alicia Berenson was
+                        different. She was a famous painter married to a famous photographer. They were the golden
+                        couple, beloved by the media. Until the night she shot him.</p>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-200 px-6 py-4 bg-gray-50 flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-500 hover:text-cyan-600 p-2">
+                        <i class="fas fa-chevron-left"></i> Previous
+                    </button>
+                    <span class="text-sm text-gray-500">Page 1 of 24</span>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="text-gray-500 hover:text-cyan-600 p-2">
+                        <i class="fas fa-book-open"></i> Table of Contents
+                    </button>
+                    <button class="text-gray-500 hover:text-cyan-600 p-2">
+                        Next <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
