@@ -267,5 +267,538 @@
         <div class="border-t border-gray-200"></div>
         <a href="#" onclick="logoutUser()" class="block px-4 py-2 text-sm text-gray-700 hover:bg-cyan-50">Sign Out</a>
     </div>
+
+     <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section
+            class="bg-gradient-to-r from-cyan-800 to-teal-600 text-white rounded-2xl overflow-hidden mb-12 relative">
+            <div class="absolute inset-0 opacity-10">
+                <div
+                    class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80')] bg-cover bg-center mix-blend-overlay">
+                </div>
+            </div>
+
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row items-center">
+                    <!-- Text Content -->
+                    <div class="md:w-1/2 p-8 md:p-12 flex flex-col justify-center relative z-10">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 leading-tight">
+                            Discover Your Next <span class="text-yellow-300">Favorite Book</span>
+                        </h1>
+                        <p class="text-xl lg:text-2xl mb-8 opacity-90 max-w-lg">
+                            Explore our vast collection of over 50,000 free e-books. Read online or download to enjoy
+                            anytime, anywhere.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <button
+                                class="bg-white text-cyan-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-all transform hover:-translate-y-1 hover:shadow-lg flex items-center justify-center">
+                                <i class="fas fa-book-open mr-3"></i> Start Reading Now
+                            </button>
+                            <button
+                                class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-cyan-600 transition-all transform hover:-translate-y-1 hover:shadow-lg flex items-center justify-center">
+                                <i class="fas fa-search mr-3"></i> Browse Collection
+                            </button>
+                        </div>
+
+                        <div class="mt-10 flex items-center space-x-6">
+                            <div class="flex -space-x-2">
+                                <img src="https://avatars.githubusercontent.com/u/195456266?v=4"
+                                    class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://avatars.githubusercontent.com/u/92626624?v=4"
+                                    class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                                <img src="https://avatars.githubusercontent.com/u/185999515?v=4"
+                                    class="w-10 h-10 rounded-full border-2 border-white" alt="User">
+                            </div>
+                            <div>
+                                <p class="text-sm opacity-80">Join <span class="font-bold">10,000+</span> happy readers
+                                </p>
+                                <div class="flex items-center mt-1">
+                                    <i class="fas fa-star text-yellow-300 mr-1"></i>
+                                    <i class="fas fa-star text-yellow-300 mr-1"></i>
+                                    <i class="fas fa-star text-yellow-300 mr-1"></i>
+                                    <i class="fas fa-star text-yellow-300 mr-1"></i>
+                                    <i class="fas fa-star text-yellow-300 mr-1"></i>
+                                    <span class="text-sm ml-2">4.9/5 (2,483 reviews)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Content -->
+                    <div class="md:w-1/2 flex items-center justify-center p-4 md:p-8 relative z-10">
+                        <div class="relative">
+                            <img src="https://images.unsplash.com/photo-1664459606718-aec7e1cbd414?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="Reading Illustration"
+                                class="rounded-xl shadow-2xl w-full max-w-2xl object-cover transform rotate-1 hover:rotate-0 transition-transform duration-300">
+
+                            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg hidden md:block">
+                                <div class="flex items-center">
+                                    <div class="bg-indigo-100 p-3 rounded-full mr-3">
+                                        <i class="fas fa-book text-cyan-600 text-xl"></i>
+                                    </div>
+                                    <div>
+                                        <p class="text-sm text-gray-500">Featured Book</p>
+                                        <p class="font-bold text-gray-800">Atomic Habits</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div
+                                class="absolute -top-6 -right-6 bg-yellow-400 text-gray-900 p-4 rounded-full shadow-lg hidden md:block animate-bounce">
+                                <div class="text-center">
+                                    <p class="text-xl font-bold">50% OFF</p>
+                                    <p class="text-xs">Premium</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Books -->
+        <section class="mb-16">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-800">Featured Books</h2>
+                <a href="#" class="text-cyan-600 hover:underline flex items-center">
+                    View All <i class="fas fa-chevron-right ml-1 text-sm"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                <!-- Book Card 1 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 cursor-pointer"
+                    onclick="openReader('The Silent Patient', 'Alex Michaelides')">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-2 right-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i> 4.8
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">The Silent Patient</h3>
+                        <p class="text-gray-600 text-sm mb-2">Alex Michaelides</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Fiction</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 2 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1589998059171-988d887df646?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Atomic Habits</h3>
+                        <p class="text-gray-600 text-sm mb-2">James Clear</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Self-help</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 3 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://static-01.daraz.com.bd/p/21c7ab72518a2bf13f95dbe0310096b7.jpg"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-2 right-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i> 4.9
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">The Kite Runner</h3>
+                        <p class="text-gray-600 text-sm mb-2">Khaled Hosseini</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">History</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 4 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://i0.wp.com/www.raptisrarebooks.com/images/59938/brave-new-world-aldous-huxley-first-edition-rare-signed.jpg?fit=1000%2C800&ssl=1"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Brave New World</h3>
+                        <p class="text-gray-600 text-sm mb-2">Aldous Huxley</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Fiction</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 5 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://images.squarespace-cdn.com/content/v1/5b82fc6ee74940f6250bb2a6/1541025055860-ZM7324K1X5HNTTYXEWLM/unnamed+%287%29.jpg?format=1500w"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Make Your Bed</h3>
+                        <p class="text-gray-600 text-sm mb-2">Admiral William H. McRaven</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Productivity</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Card 6 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 cursor-pointer"
+                    onclick="openReader('The Silent Patient', 'Alex Michaelides')">
+                    <div class="relative">
+                        <img src="https://miro.medium.com/v2/resize:fit:857/1*PiDV4yruoERWbQwKtwWlBw.png"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-2 right-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i> 4.8
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">The Lean Startup</h3>
+                        <p class="text-gray-600 text-sm mb-2">Eric Ries</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Fiction</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 7 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://michaelbryn.com/wp-content/uploads/2023/11/start-with-why-book.jpeg"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Start With Why</h3>
+                        <p class="text-gray-600 text-sm mb-2">Simon Sinek</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Self-help</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 8 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://thefirstedition-prod.s3.us-east-2.amazonaws.com/wp-content/uploads/2023/06/15173635/Lee-Harper_To-Kill-A-Mockingbird_14085-3.jpg"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-2 right-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i> 4.9
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate"> To Kill a Mockingbird</h3>
+                        <p class="text-gray-600 text-sm mb-2">Harper Lee</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">History</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 9 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://media.licdn.com/dms/image/v2/D5612AQHqv-5cHvzT4g/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1680597291060?e=2147483647&v=beta&t=mEkx5oJVnJW54qJiP1GFCJg4jU59kDpqzU8a4k3AEmc"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">The Power of Now</h3>
+                        <p class="text-gray-600 text-sm mb-2">Eckhart Tolle</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Fiction</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 10 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://images.othoba.com/images/thumbs/0836857_deep-work-rules-for-focused-success-in-a-distracted-world-by-cal-newport-paperback.jpeg"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Deep Work</h3>
+                        <p class="text-gray-600 text-sm mb-2">Cal Newport</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Productivity</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Book Card 11 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100 cursor-pointer"
+                    onclick="openReader('The Silent Patient', 'Alex Michaelides')">
+                    <div class="relative">
+                        <img src="https://gregory.ph/cdn/shop/products/BuyThink_GrowRichinPhilippines3.jpg?v=1626537490"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-2 right-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i> 4.8
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Think and Grow Rich</h3>
+                        <p class="text-gray-600 text-sm mb-2">	Napoleon Hill</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Fiction</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 12 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://hilltopbookstore.odoo.com/web/image/product.template/28/image_1024?unique=ed82f58"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Rich Dad Poor Dad</h3>
+                        <p class="text-gray-600 text-sm mb-2">	Robert T. Kiyosaki</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Self-help</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 13 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://miro.medium.com/v2/resize:fit:2000/1*-RvLCJvo24xPapflSGRBOg.jpeg"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                        <div
+                            class="absolute top-2 right-2 bg-yellow-400 text-xs font-bold px-2 py-1 rounded flex items-center">
+                            <i class="fas fa-star mr-1"></i> 4.9
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">The Psychology of Money</h3>
+                        <p class="text-gray-600 text-sm mb-2">	Morgan Housel</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">History</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 14 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://media.licdn.com/dms/image/v2/D4D12AQF7GcmOQ9oYjQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1719769518441?e=2147483647&v=beta&t=Zv57SyWdBxUhQvtob92DQJoOmbf-KH7xXu6Bl1Lp7W4"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">Zero to One</h3>
+                        <p class="text-gray-600 text-sm mb-2">	Peter Thiel</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Fiction</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Card 15 -->
+                <div class="book-card bg-white rounded-lg overflow-hidden shadow-md border border-gray-100">
+                    <div class="relative">
+                        <img src="https://cdn.dotpe.in/longtail/store-items/7655579/cgOBc68p.jpeg"
+                            alt="Book Cover" class="w-full h-48 object-cover">
+                    </div>
+                    <div class="p-4">
+                        <h3 class="font-bold text-gray-800 mb-1 truncate">You Can Win</h3>
+                        <p class="text-gray-600 text-sm mb-2">Shiv Khera</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs text-gray-500">Productivity</span>
+                            <div class="flex space-x-2">
+                                <button class="text-cyan-600 hover:text-teal-500 text-sm font-medium">
+                                    <i class="fas fa-book-open mr-1"></i> Read
+                                </button>
+                                <button class="text-gray-500 hover:text-gray-700 text-sm">
+                                    <i class="fas fa-download"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories Section -->
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">Browse by Category</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+                <a href="#"
+                    class="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-100 hover:border-cyan-300 transition transform hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-book text-teal-600"></i>
+                    </div>
+                    <h3 class="font-medium text-gray-800">Fiction</h3>
+                    <p class="text-xs text-gray-500 mt-1">1,240 books</p>
+                </a>
+
+                <a href="#"
+                    class="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-100 hover:border-cyan-300 transition transform hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-12 h-12 bg-cyan-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-flask text-teal-600"></i>
+                    </div>
+                    <h3 class="font-medium text-gray-800">Science</h3>
+                    <p class="text-xs text-gray-500 mt-1">856 books</p>
+                </a>
+
+                <a href="#"
+                    class="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-100 hover:border-cyan-300 transition transform hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-chart-line text-green-600"></i>
+                    </div>
+                    <h3 class="font-medium text-gray-800">Business</h3>
+                    <p class="text-xs text-gray-500 mt-1">723 books</p>
+                </a>
+
+                <a href="#"
+                    class="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-100 hover:border-cyan-300 transition transform hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-heart text-purple-600"></i>
+                    </div>
+                    <h3 class="font-medium text-gray-800">Self-help</h3>
+                    <p class="text-xs text-gray-500 mt-1">1,042 books</p>
+                </a>
+
+                <a href="#"
+                    class="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-100 hover:border-cyan-300 transition transform hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-landmark text-red-600"></i>
+                    </div>
+                    <h3 class="font-medium text-gray-800">History</h3>
+                    <p class="text-xs text-gray-500 mt-1">589 books</p>
+                </a>
+
+                <a href="#"
+                    class="bg-white rounded-lg p-6 text-center shadow-sm border border-gray-100 hover:border-cyan-300 transition transform hover:-translate-y-1 hover:shadow-md">
+                    <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <i class="fas fa-laptop-code text-yellow-600"></i>
+                    </div>
+                    <h3 class="font-medium text-gray-800">Technology</h3>
+                    <p class="text-xs text-gray-500 mt-1">672 books</p>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
