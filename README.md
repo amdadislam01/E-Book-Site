@@ -1,0 +1,39 @@
+#  E-Book Site
+
+A clean, minimal, and responsive **E-Book Landing Page** built with **HTML** and **Tailwind CSS**. Designed to showcase e-books, promotions, and author features with a modern and user-friendly layout.
+
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)](https://amdadislam01.github.io/E-Book-Site/)  
+[![Source Code](https://img.shields.io/badge/💻_Source_Code-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amdadislam01/E-Book-Site)
+
+---
+
+##  Key Features
+
+-  Beautiful hero section highlighting featured e-books  
+-  Responsive grid showcasing multiple book covers and details  
+-  CTA buttons for "Read Now" or "Buy Now"  
+-  Smooth hover effects and modern typography  
+-  Fully responsive across devices (mobile, tablet, desktop)
+
+---
+
+##  Technologies Used
+
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=html,tailwindcss" alt="Tech Stack" width="160"/>
+</p>
+
+---
+
+##  Screenshot
+
+> (Upload a screenshot and update the image link below)
+
+<p align="center">
+  <img src="https://i.postimg.cc/YOUR_IMAGE_LINK.png" alt="E-Book Site Screenshot" width="800"/>
+</p>
+
+---
+
+##  Project Structure
+
